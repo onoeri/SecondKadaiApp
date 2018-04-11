@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9W-cH-R4j">
-                                <rect key="frame" x="10" y="120" width="300" height="21"/>
+                                <rect key="frame" x="64.5" y="120" width="191" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="162" id="E9O-c8-PJb"/>
                                 </constraints>
@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1TL-gI-2y5">
-                                <rect key="frame" x="20" y="161" width="280" height="30"/>
+                                <rect key="frame" x="85" y="161" width="150" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="8y8-Dz-XnB"/>
                                 </constraints>
@@ -37,7 +37,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qd7-hB-N93">
-                                <rect key="frame" x="100" y="211" width="120" height="30"/>
+                                <rect key="frame" x="144.5" y="211" width="31" height="30"/>
                                 <state key="normal" title="入室"/>
                                 <connections>
                                     <segue destination="Fvk-ww-0wA" kind="show" id="yRn-fv-6DV"/>
@@ -46,14 +46,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1TL-gI-2y5" secondAttribute="trailing" constant="20" id="9DT-pe-WPI"/>
                             <constraint firstItem="g9W-cH-R4j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Db2-yW-UT3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g9W-cH-R4j" secondAttribute="trailing" constant="10" id="Db3-Nd-qhp"/>
-                            <constraint firstItem="Qd7-hB-N93" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Dfn-h4-SM3"/>
                             <constraint firstItem="1TL-gI-2y5" firstAttribute="top" secondItem="g9W-cH-R4j" secondAttribute="bottom" constant="20" id="XTt-hp-96m"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qd7-hB-N93" secondAttribute="trailing" constant="100" id="ldh-rm-8OK"/>
-                            <constraint firstItem="g9W-cH-R4j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="tcE-0X-FDJ"/>
-                            <constraint firstItem="1TL-gI-2y5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vpo-Sn-HWa"/>
+                            <constraint firstItem="Qd7-hB-N93" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ajg-aO-3GZ"/>
+                            <constraint firstItem="1TL-gI-2y5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kki-cp-pv0"/>
+                            <constraint firstItem="g9W-cH-R4j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x0y-ja-QsB"/>
                             <constraint firstItem="Qd7-hB-N93" firstAttribute="top" secondItem="1TL-gI-2y5" secondAttribute="bottom" constant="20" id="xd6-jz-g03"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -75,14 +72,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOX-3f-SZH">
-                                <rect key="frame" x="100" y="161" width="120" height="30"/>
+                                <rect key="frame" x="144.5" y="161" width="31" height="30"/>
                                 <state key="normal" title="退室"/>
                                 <connections>
                                     <segue destination="6Vd-Fk-yq4" kind="unwind" unwindAction="unwind:" id="E10-4w-xK5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob3-nT-QU4">
-                                <rect key="frame" x="20" y="120" width="280" height="21"/>
+                                <rect key="frame" x="139" y="120" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="Jgb-of-BqN"/>
                                 </constraints>
@@ -93,12 +90,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="iOX-3f-SZH" secondAttribute="trailing" constant="100" id="1rb-E5-xy6"/>
-                            <constraint firstItem="KiQ-m8-oVU" firstAttribute="trailing" secondItem="ob3-nT-QU4" secondAttribute="trailing" constant="20" id="EUC-yx-jtO"/>
                             <constraint firstItem="iOX-3f-SZH" firstAttribute="top" secondItem="ob3-nT-QU4" secondAttribute="bottom" constant="20" id="UFf-sU-WUL"/>
-                            <constraint firstItem="ob3-nT-QU4" firstAttribute="leading" secondItem="KiQ-m8-oVU" secondAttribute="leading" constant="20" id="Ud3-SB-d5s"/>
                             <constraint firstItem="ob3-nT-QU4" firstAttribute="top" secondItem="KiQ-m8-oVU" secondAttribute="top" constant="100" id="ZD7-ER-Y5G"/>
-                            <constraint firstItem="iOX-3f-SZH" firstAttribute="leading" secondItem="40Q-Pv-0qk" secondAttribute="leading" constant="100" id="b8K-Qk-3po"/>
+                            <constraint firstItem="ob3-nT-QU4" firstAttribute="centerX" secondItem="40Q-Pv-0qk" secondAttribute="centerX" id="hop-k8-Fta"/>
+                            <constraint firstItem="iOX-3f-SZH" firstAttribute="centerX" secondItem="40Q-Pv-0qk" secondAttribute="centerX" id="shb-5g-E4q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KiQ-m8-oVU"/>
                     </view>
